@@ -1,245 +1,201 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-tw" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title></title><meta name="author" content="HW"><meta name="copyright" content="HW"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title">
 <meta property="og:url" content="https://m790101.github.io/warp-present.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="HW">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/warp-present.github.io/img/favicon.png"><link rel="canonical" href="https://m790101.github.io/warp-present.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/warp-present.github.io/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/warp-present.github.io/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-09-18 10:33:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/warp-present.github.io/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/warp-present.github.io/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/warp-present.github.io/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/warp-present.github.io/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/warp-present.github.io/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/warp-present.github.io/">Home</a>
-        
-          <a class="main-nav-link" href="/warp-present.github.io/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/warp-present.github.io/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://m790101.github.io/warp-present.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-warp" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" class="article-date">
-  <time class="dt-published" datetime="2023-09-14T01:31:06.767Z" itemprop="datePublished">2023-09-14</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/">關於Warp</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/warp-present.github.io/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/warp-present.github.io/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/warp-present.github.io/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/warp-present.github.io/" title=""><span class="site-name"></span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title"></h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" title="關於Warp">關於Warp</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-09-14T01:31:06.767Z" title="Created 2023-09-14 09:31:06">2023-09-14</time></span></div><div class="content">什麼是Warp？一個AI的terminal，可以讓你在terminal中使用AI，並且可以讓你的AI在terminal中使用你的電腦。還有許多功能可以讓開發變得更容易，協作上更方便。
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="什麼是Warp？"><a href="#什麼是Warp？" class="headerlink" title="什麼是Warp？"></a>什麼是Warp？</h2><p>一個AI的terminal，可以讓你在terminal中使用AI，並且可以讓你的AI在terminal中使用你的電腦。<br>還有許多功能可以讓開發變得更容易，協作上更方便。</p>
-<hr>
-<h1 id="AI"><a href="#AI" class="headerlink" title="#AI"></a>#AI</h1><p>可以輸入#，使用AI的功能，例如：<br><img src="https://i.imgur.com/6v7VgpC.png" alt="ai # suggest"></p>
-<p>也可以按右邊叫出AI的功能區塊，<br><img src="https://i.imgur.com/CS1IGqu.png" alt="ai tab suggest"><br><img src="https://i.imgur.com/6b9y5FA.png" alt="ai tab suggest answer"></p>
-<h1 id="Workflow"><a href="#Workflow" class="headerlink" title="#Workflow"></a>#Workflow</h1><p>提示指令<br><img src="https://i.imgur.com/2nhGvdL.png" alt="auto suggest"></p>
-<p>記錄指令成為範本</p>
-<p>範例影片:<br><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1MGvE1uJjLIyuyEgKCTMto3oekYAj2kDR/view?usp=sharing">https://drive.google.com/file/d/1MGvE1uJjLIyuyEgKCTMto3oekYAj2kDR/view?usp=sharing</a></p>
-<h3 id="協作"><a href="#協作" class="headerlink" title="協作"></a>協作</h3><p>建立指令快捷<br><img src="https://i.imgur.com/Vwas1M3.png" alt="workflow-build"></p>
-<ol>
-<li><p>建立team<br> <img src="https://i.imgur.com/4DL8Tot.png" alt="workflow-team-created"></p>
-</li>
-<li><p>分享指令<br> <img src="https://i.imgur.com/9oK8xzZ.png" alt="workflow-team-share-flow"></p>
-</li>
-</ol>
-<hr>
-<h1 id="方案"><a href="#方案" class="headerlink" title="#方案"></a>#方案</h1><h4 id="免費版-Free"><a href="#免費版-Free" class="headerlink" title="免費版(Free)"></a>免費版(Free)</h4><blockquote>
-<ol>
-<li>一天AI可用20個request</li>
-<li>可分享</li>
-<li>有離線功能</li>
-</ol>
-</blockquote>
-<p>價錢: 0元</p>
-<br>
+#AI可以輸入#，使用AI的功能，例如：
+也可以按右邊叫出AI的功能區塊，
+#Workflow提示指令
+記錄指令成為範本
+範例影片:https://drive.google.com/file/d/1MGvE1uJjLIyuyEgKCTMto3oekYAj2kDR/view?usp=sharing
+協作建立指令快捷
 
-<h4 id="付費版-Team"><a href="#付費版-Team" class="headerlink" title="付費版(Team)"></a>付費版(Team)</h4><blockquote>
-<ol>
-<li>一天AI可用100個request</li>
-<li>即時分享(未釋出)</li>
-</ol>
-</blockquote>
-<p>價錢: 12元&#x2F;人&#x2F;月</p>
-<hr>
-<h2 id="想法-結論"><a href="#想法-結論" class="headerlink" title="想法&amp;結論"></a>想法&amp;結論</h2><ul>
-<li>操作介面直覺好上手，遇到複雜的指令且需要重複使用，他可以幫助減少錯誤跟記憶指令的時間。</li>
-</ul>
-<ul>
-<li>AI的部分可以幫助快速理解指令以及基本的除錯</li>
-</ul>
-<ul>
-<li>團隊上目前看起來最有幫助的用法會是：<ol>
-<li>以渣打來看，包版還有後續上架的程序，可以統整，讓整個過程更順暢，減少人為錯誤。</li>
-<li>未來專案也可以使用它來讓整個程序更有效率順暢，新進專案的人也可以更快上手。</li>
-</ol>
-</li>
-</ul>
-<ul>
-<li>可以觀察未來付費版本是不是有更多我們團隊會用到的功能</li>
-</ul>
+建立team 
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://m790101.github.io/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" data-id="clmo8uex8000028rv6mu6g6km" data-title="關於Warp" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+分享指令 
 
 
 
-  
+#方案免費版(Free)
+
+一天AI可用20個request
+可分享
+有離線功能
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/warp-present.github.io/archives/2023/09/">September 2023</a></li></ul>
-    </div>
-  </div>
+價錢: 0元
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/">關於Warp</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+付費版(Team)
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 HW<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/warp-present.github.io/" class="mobile-nav-link">Home</a>
-  
-    <a href="/warp-present.github.io/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+一天AI可用100個request
+即時分享(未釋出)
 
 
-<script src="/warp-present.github.io/js/jquery-3.6.4.min.js"></script>
+價錢: 12元&#x2F;人&#x2F;月
+
+想法&amp;結論
+操作介面直覺好上手，遇到複雜的指令且需要重複使用，他可以幫助減少錯誤跟記憶指令的時間。
 
 
-
-  
-<script src="/warp-present.github.io/fancybox/jquery.fancybox.min.js"></script>
+AI的部分可以幫助快速理解指令以及基本的除錯
 
 
-
-
-<script src="/warp-present.github.io/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+團隊上目前看起來最有幫助的用法會是：
+以渣打來看，包版還有後續上架 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/warp-present.github.io/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HW</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/warp-present.github.io/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/warp-present.github.io/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/warp-present.github.io/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" title="關於Warp">關於Warp</a><time datetime="2023-09-14T01:31:06.767Z" title="Created 2023-09-14 09:31:06">2023-09-14</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/warp-present.github.io/archives/2023/09/"><span class="card-archive-list-date">九月 2023</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-09-18T02:33:44.558Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By HW</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/warp-present.github.io/js/utils.js"></script><script src="/warp-present.github.io/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
