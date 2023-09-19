@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="zh-tw" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>關於Warp | </title><meta name="author" content="HW"><meta name="copyright" content="HW"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="簡報架構：    Part1. 工作流程中的痛點，哪些 AI 可以幫我們解決    Part2. AI 工具介紹：內容須考慮是否可以帶入 TA 的工作內容     資料：     ｜--- 什麼是 &amp;#123;Tool Name&amp;#125;     ｜--- &amp;#123;Tool Name&amp;#125; 價格     ｜--- &amp;#123;Tool Name&amp;#125; 免費、付費差異     資訊">
+<meta property="og:type" content="article">
+<meta property="og:title" content="關於Warp">
+<meta property="og:url" content="https://m790101.github.io/warp-present.github.io/warp-present.github.io/2023/09/18/warp2/index.html">
+<meta property="og:site_name">
+<meta property="og:description" content="簡報架構：    Part1. 工作流程中的痛點，哪些 AI 可以幫我們解決    Part2. AI 工具介紹：內容須考慮是否可以帶入 TA 的工作內容     資料：     ｜--- 什麼是 &amp;#123;Tool Name&amp;#125;     ｜--- &amp;#123;Tool Name&amp;#125; 價格     ｜--- &amp;#123;Tool Name&amp;#125; 免費、付費差異     資訊">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-09-18T08:32:41.078Z">
+<meta property="article:modified_time" content="2023-09-19T06:57:02.125Z">
+<meta property="article:author" content="HW">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/warp-present.github.io/img/favicon.png"><link rel="canonical" href="https://m790101.github.io/warp-present.github.io/warp-present.github.io/2023/09/18/warp2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/warp-present.github.io/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/warp-present.github.io/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '關於Warp',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-19 14:57:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/warp-present.github.io/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/warp-present.github.io/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/warp-present.github.io/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/warp-present.github.io/" title=""><span class="site-name"></span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">關於Warp</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-09-18T08:32:41.078Z" title="Created 2023-09-18 16:32:41">2023-09-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-09-19T06:57:02.125Z" title="Updated 2023-09-19 14:57:02">2023-09-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="關於Warp"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><p>簡報架構：<br>    Part1. 工作流程中的痛點，哪些 AI 可以幫我們解決<br>    Part2. AI 工具介紹：內容須考慮是否可以帶入 TA 的工作內容</p>
+<pre><code>    資料：
+    ｜--- 什麼是 &#123;Tool Name&#125;
+    ｜--- &#123;Tool Name&#125; 價格
+    ｜--- &#123;Tool Name&#125; 免費、付費差異
+    資訊：
+    ｜--- &#123;Tool Name&#125; 特色
+    ｜--- &#123;Tool Name&#125; 限制與潛在問題(相對應的緩解辦法)
+    ｜--- &#123;Tool Name&#125; 常用（套件、提示詞、常用快捷、自由發揮的部分）
+    ｜--- &#123;Tool Name&#125; 安裝（註冊）
+    應用：
+    ｜--- &#123;Tool Name&#125; 使用案例
+    ｜--- &#123;Tool Name&#125; 可數值化或可觀測的結果
+
+    將想法轉譯成有意義的解讀
+    ｜--- 結論
+
+Part3. 統整的 live demo / Mia
+
+Part4. 結語
+
+Part5. Q&amp;A
+</code></pre>
+<h2 id="什麼是Warp？"><a href="#什麼是Warp？" class="headerlink" title="什麼是Warp？"></a>什麼是Warp？</h2><p>一個AI的terminal，可以讓你在terminal中使用AI，並且可以讓你的AI在terminal中使用你的電腦。<br>還有許多功能可以讓開發變得更容易，協作上更方便。</p>
+<hr>
+<h1 id="方案"><a href="#方案" class="headerlink" title="#方案"></a>#方案</h1><h4 id="免費版-Free"><a href="#免費版-Free" class="headerlink" title="免費版(Free)"></a>免費版(Free)</h4><blockquote>
+<ol>
+<li>一天AI可用20個request</li>
+<li>可分享</li>
+<li>有離線功能</li>
+<li>5人以內的team(目前為免費使用，預計在2023年十月後會收費)</li>
+</ol>
+</blockquote>
+<p>價錢: 0元</p>
+<br>
+
+<h4 id="付費版-Team"><a href="#付費版-Team" class="headerlink" title="付費版(Team)"></a>付費版(Team)</h4><blockquote>
+<ol>
+<li>一天AI可用100個request</li>
+<li>即時分享(未釋出)</li>
+</ol>
+</blockquote>
+<p>價錢: 12元(美金)&#x2F;人&#x2F;月</p>
+<hr>
+<h1 id="特色介紹"><a href="#特色介紹" class="headerlink" title="#特色介紹"></a>#特色介紹</h1><h2 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h2><p>可以輸入#，使用AI的功能，例如：<br><img src="https://i.imgur.com/6v7VgpC.png" alt="ai # suggest"></p>
+<p>在指令上按右鍵，呼叫AI<br><img src="/warp-present.github.io/images/ai/ai-ask3.png" alt="ai-ask3"></p>
+<p>也可以按右邊叫出AI的功能區塊，直接輸入問題。<br><img src="/warp-present.github.io/images/ai/ai-ask1.png" alt="ai tab suggest"><br>得到答案<br><img src="/warp-present.github.io/images/ai/ai-ask2.png" alt="ai tab suggest answer"></p>
+<p>例子2：忘記找尋檔案的指令<br><img src="/warp-present.github.io/images/ai/ai-search.png" alt="ai-search"></p>
+<h2 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h2><ol>
+<li><p>可以直接使用滑鼠選取，右鍵編輯<br><img src="/warp-present.github.io/images/introduction/intro-mouse.png" alt="mouse"></p>
+</li>
+<li><p>提示指令<br><img src="/warp-present.github.io/images/introduction/intro-suggest.png" alt="auto suggest"></p>
+</li>
+<li><p>可將指令儲存並把部分變成變數，根據情境變換變數的內容<br><img src="/warp-present.github.io/images/introduction/intro-argument1.png" alt="intro-argument1"><br>使用指令<br><img src="/warp-present.github.io/images/introduction/intro-argument2.png" alt="intro-argument2"></p>
+</li>
+<li><p>使用範本<br>可以把指令儲存成yaml檔案，並可以呼叫讓terminal自動執行指令。<br> <img src="/warp-present.github.io/images/launch-config/workflow-launch-congfig2.png" alt="workflow-launch-congfig2"></p>
+</li>
+<li><p>常見指令資料庫<br>按crl + shift + r<br><img src="/warp-present.github.io/images/introduction/intro-workflow.png" alt="intro-workflow"></p>
+</li>
+</ol>
+<h2 id="協作"><a href="#協作" class="headerlink" title="協作"></a>協作</h2><h3 id="可以建立團隊分享的指令區"><a href="#可以建立團隊分享的指令區" class="headerlink" title="可以建立團隊分享的指令區"></a>可以建立團隊分享的指令區</h3><p>建立指令快捷<br><img src="/warp-present.github.io/images/work-flow-new-line.png" alt="workflow-new-line"></p>
+<ol>
+<li><p>建立team<br> <img src="https://i.imgur.com/4DL8Tot.png" alt="workflow-team-created"></p>
+</li>
+<li><p>分享指令<br> 可以拖拉個人指令到team中，或是在team中另外新增指令。<br> <img src="/warp-present.github.io/images/join-team5.png" alt="join-team5"></p>
+<p> 分享完成<br> <img src="/warp-present.github.io/images/join-team6.png" alt="join-team6"></p>
+<h2 id="如何邀請-分享指令？"><a href="#如何邀請-分享指令？" class="headerlink" title="如何邀請&#x2F;分享指令？"></a>如何邀請&#x2F;分享指令？</h2><p> 複製分享連結<br> <img src="/warp-present.github.io/images/join-team0.png" alt="join-team0"><br> 點擊分享連結<br> <img src="/warp-present.github.io/images/join-team1.png" alt="join-team1"></p>
+<p> 登入後加入<br> <img src="/warp-present.github.io/images/join-team2.png" alt="join-team2"></p>
+<p> 看到team (tpi-scb)名稱以及指令在左上角<br> <img src="/warp-present.github.io/images/join-team3.jpg" alt="join-team3"></p>
+</li>
+</ol>
+<h1 id="限制與潛在問題-相對應的緩解辦法"><a href="#限制與潛在問題-相對應的緩解辦法" class="headerlink" title="#限制與潛在問題(相對應的緩解辦法)"></a>#限制與潛在問題(相對應的緩解辦法)</h1><ol>
+<li><p><strong>不支援windows：</strong><br>目前只支援MAC系統，但在未來會延伸到Linux以及Windows等。</p>
+</li>
+<li><p><strong>不完全支援中文(輸入注音顯示不出來)：</strong><br>中文可以顯示，但是輸入注音會顯示不出來</p>
+</li>
+<li><p><strong>AI有時候也無法解決遇到問題：</strong><br>測試了幾個實際會遇到的情境，AI這邊沒有辦法得到正確精確的答案。<br>要觀察未來是否可能會更精確，更容易解決問題。</p>
+</li>
+<li><p><strong>協作雖然可以分享指令，但有些指令可能需要各自設定調整：</strong><br>雖然有變數可以調整，但可能會因為電腦不同環境不同，需要不同的調整，增加減少指令，這樣會讓協作上面沒辦法達到原本使用這個工具的最大效益。</p>
+</li>
+</ol>
+<h1 id="應用："><a href="#應用：" class="headerlink" title="#應用："></a>#應用：</h1><h4 id="使用案例"><a href="#使用案例" class="headerlink" title="使用案例"></a>使用案例</h4><p>使用範本開啟渣打專案</p>
+<ol>
+<li><p>建立範本<br> <img src="/warp-present.github.io/images/launch-config/workflow-launch-congfig1.png" alt="workflow-launch-congfig1"></p>
+</li>
+<li><p>cmd+crl+l 呼叫使用<br> <img src="/warp-present.github.io/images/launch-config/workflow-launch-congfig2.png" alt="workflow-launch-congfig2"></p>
+</li>
+<li><p>使用範本<br>  <img src="/warp-present.github.io/images/launch-config/workflow-launch-congfig3.png" alt="workflow-launch-congfig3"></p>
+<p> 範例影片:<br> <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1FjLvhQpWgO4LvSvNHdulRdfyWt3LU9b0/view?usp=sharing">https://drive.google.com/file/d/1FjLvhQpWgO4LvSvNHdulRdfyWt3LU9b0/view?usp=sharing</a></p>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://m790101.github.io/warp-present.github.io">HW</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://m790101.github.io/warp-present.github.io/warp-present.github.io/2023/09/18/warp2/">https://m790101.github.io/warp-present.github.io/warp-present.github.io/2023/09/18/warp2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" title="關於Warp"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">關於Warp</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/warp-present.github.io/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HW</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/warp-present.github.io/archives/"><div class="headline">Articles</div><div class="length-num">2</div></a><a href="/warp-present.github.io/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/warp-present.github.io/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AFWarp%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">什麼是Warp？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%A1%88"><span class="toc-number"></span> <span class="toc-text">#方案</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%8D%E8%B2%BB%E7%89%88-Free"><span class="toc-number">0.0.1.</span> <span class="toc-text">免費版(Free)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%98%E8%B2%BB%E7%89%88-Team"><span class="toc-number">0.0.2.</span> <span class="toc-text">付費版(Team)</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%89%B9%E8%89%B2%E4%BB%8B%E7%B4%B9"><span class="toc-number"></span> <span class="toc-text">#特色介紹</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#AI"><span class="toc-number">1.</span> <span class="toc-text">AI</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Workflow"><span class="toc-number">2.</span> <span class="toc-text">Workflow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%94%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">協作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BB%A5%E5%BB%BA%E7%AB%8B%E5%9C%98%E9%9A%8A%E5%88%86%E4%BA%AB%E7%9A%84%E6%8C%87%E4%BB%A4%E5%8D%80"><span class="toc-number">3.1.</span> <span class="toc-text">可以建立團隊分享的指令區</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E9%82%80%E8%AB%8B-%E5%88%86%E4%BA%AB%E6%8C%87%E4%BB%A4%EF%BC%9F"><span class="toc-number">4.</span> <span class="toc-text">如何邀請&#x2F;分享指令？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%99%90%E5%88%B6%E8%88%87%E6%BD%9B%E5%9C%A8%E5%95%8F%E9%A1%8C-%E7%9B%B8%E5%B0%8D%E6%87%89%E7%9A%84%E7%B7%A9%E8%A7%A3%E8%BE%A6%E6%B3%95"><span class="toc-number"></span> <span class="toc-text">#限制與潛在問題(相對應的緩解辦法)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%87%89%E7%94%A8%EF%BC%9A"><span class="toc-number"></span> <span class="toc-text">#應用：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%A1%88%E4%BE%8B"><span class="toc-number">0.0.1.</span> <span class="toc-text">使用案例</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/warp-present.github.io/warp-present.github.io/2023/09/18/warp2/" title="關於Warp">關於Warp</a><time datetime="2023-09-18T08:32:41.078Z" title="Created 2023-09-18 16:32:41">2023-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/warp-present.github.io/warp-present.github.io/2023/09/14/warp/" title="關於Warp">關於Warp</a><time datetime="2023-09-14T01:31:06.767Z" title="Created 2023-09-14 09:31:06">2023-09-14</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By HW</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/warp-present.github.io/js/utils.js"></script><script src="/warp-present.github.io/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
